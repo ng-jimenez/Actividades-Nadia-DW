@@ -38,7 +38,6 @@ body{
   margin-bottom: 1.5rem;
 }
 
-
 .cover-img {
   width: 8rem;
   height: 8rem;
@@ -46,7 +45,6 @@ body{
   border-radius: 50%;
   box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
 }
-
 
 .photo-circle {
   width: 13rem;
@@ -56,7 +54,6 @@ body{
   box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
   margin-bottom: 1.5rem;
 }
-
 
 .photo-img {
   width: 100%;
@@ -72,7 +69,6 @@ body{
   max-width: 24rem;
 }
 
-
 .gallery-title {
   font-family: 'Playfair Display', serif;
   color: var(--gold);
@@ -80,7 +76,6 @@ body{
   font-size: 28px;
   margin: 0 0 1rem 0;
 }
-
 
 .gallery-caption {
   color: var(--text-muted);
@@ -99,19 +94,16 @@ photo-circle {
   margin-bottom: 1.5rem;
 }
 
-
 .photo-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-
 .gold-border {
   border: 3px solid var(--gold);
   box-sizing: border-box;
 }
-
 
 .gallery-grid {
   width: 100%;
@@ -121,13 +113,11 @@ photo-circle {
   gap: 1rem;
 }
 
-
 .gallery-item {
   border-radius: 0.75rem;
   overflow: hidden;
   box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
 }
-
 
 .gallery-img {
   width: 100%;
@@ -144,12 +134,10 @@ button {
   justify-content: center;
 }
 
-
 .btn-text {
   color: #ffffff;
   font-size: 1.125rem;
 }
-
 
 .btn-primary {
   padding: 0.75rem 2rem;
@@ -161,12 +149,10 @@ button {
   margin-top: 2rem;
 }
 
-
 .btn-primary:hover {
   box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
   transform: scale(1.05);
 }
-
 
 .btn-secondary {
   padding: 0.5rem 1.5rem;
@@ -178,7 +164,6 @@ button {
   transition: background-color 0.3s;
 }
 
-
 .btn-secondary:hover {
   background-color: rgba(255,255,255,0.3);
 }
@@ -188,15 +173,13 @@ button {
   gap: 0.5rem;
 }
 
-
 .dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: rgba(255, 215, 0, 0.4);
+  background: rgba(57, 131, 64, 0.4);
   transition: all 0.3s;
 }
-
 
 .dot.active {
   background: var(--gold);
@@ -216,3 +199,170 @@ button {
 .page.active {
   display: flex; 
 }
+
+.final-title {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0 0 0.5rem 0;
+}
+
+.final-msg {
+  color: var(--text-muted);
+  font-size: 1.125rem;
+  opacity: 0.9;
+  margin: 0 auto;
+  max-width: 24rem;
+}
+
+.final-card {
+  width: 100%;
+  max-width: 28rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+  box-sizing: border-box;
+}
+
+.final-card:hover {
+  transform: scale(1.01);
+}
+
+.final-photo {
+  width: 12rem;
+  height: 12rem;
+}
+
+.btn-text {
+  color: #ffffff;
+  font-size: 1.125rem;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes confetti-fall {
+  0% { transform: translateY(-100%) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+
+.confetti-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.confetti {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  animation: confetti-fall 3s ease-in forwards;
+}
+
+.nav-container {
+  position: absolute;
+  bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 10;
+}
+
+.btn-nav {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.btn-nav:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
+.icon-nav {
+  width: 20px;
+  height: 20px;
+}
+
+/* Títulos de la portada */
+.cover-title {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold);
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+
+.cover-subtitle {
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+/* Emoji en pagina3 */
+.heart-emoji {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+/* Botón (pagina3) */
+.btn-309ebc {
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #309ebc, #1e6b82);
+  font-weight: bold;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border: 2px solid var(--gold);
+}
+
+.btn-309ebc:hover {
+  transform: scale(1.05);
+}
+
+/* Botón del regalo / audio (pagina4) */
+.btn-heart {
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #b91c1c, #7f1d1d);
+  font-size: 1.5rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border: 2px solid var(--gold);
+}
+
+.btn-heart:hover {
+  transform: scale(1.05);
+}
+
+/* Animación de entrada para las páginas */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
